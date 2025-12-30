@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ | Master Bin - Exterior Cleaning Experts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        /* Specific FAQ Styles */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: white;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            width: 100%;
+            text-align: left;
+            background: none;
+            border: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            color: #0f172a;
+        }
+
+        .faq-question:hover {
+            background: #f8fafc;
+        }
+
+        .faq-question i {
+            transition: transform 0.3s ease;
+            color: #3b82f6;
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            opacity: 0;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 0 1.5rem 1.5rem;
+            max-height: 500px;
+            /* Arbitrary large height */
+            opacity: 1;
+        }
+
+        .faq-answer p {
+            color: #64748b;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <a href="index.html" class="logo-link">
+                <img src="/images/logo.png" alt="Master Bin" class="logo-img">
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="commercial.html">Commercial</a>
+                <a href="about.html">About</a>
+                <a href="faq.html" class="active">FAQ</a>
+            </div>
+            <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+        </div>
+    </nav>
+
+    <!-- FAQ Hero -->
+    <header class="section hero" style="padding-top: 150px; padding-bottom: 80px;">
+        <div class="container hero-content text-center">
+            <h1>Frequently Asked <span class="text-gradient">Questions</span></h1>
+            <p class="hero-subtitle">Everything you need to know about our service.</p>
+        </div>
+    </header>
+
+    <!-- FAQ List -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="faq-container">
+
+                <!-- Q1 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do I need to be home when you clean?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No! As long as your bins are accessible (at the curb or visible in your driveway), we can
+                            clean them. We will send you a text notification when we are done.</p>
+                    </div>
+                </div>
+
+                <!-- Q2 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Does the cleaning process use harsh chemicals?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely not. We use 200°F high-pressure steam effectively kill 99.9% of bacteria. For odor
+                            control, we use an eco-friendly, biodegradable deodorizer made from essential oils.</p>
+                    </div>
+                </div>
+
+                <!-- Q3 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What day do you come?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We typically schedule our visits for the day AFTER your trash collection day. This ensures
+                            your bins are empty and ready to be cleaned.</p>
+                    </div>
+                </div>
+
+                <!-- Q4 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do you clean the outside of the bin too?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we wash the exterior, focusing on the lid and handle—the "high touch" areas that harbor
+                            the most germs.</p>
+                    </div>
+                </div>
+
+                <!-- Q5 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Where does the dirty water go?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We contain 100% of the greywater in our truck's holding tank. It is then transported and
+                            disposed of at a licensed wastewater treatement facility, following all EPA regulations.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+        <div class="container text-center">
+            <h2>Still have questions?</h2>
+            <p style="margin-bottom: 2rem;">We are happy to help.</p>
+            <a href="contact.html" class="btn btn-primary">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Master Bin</h3>
+                    <p>Professional exterior cleaning services for residential and commercial properties. Licensed,
+                        insured, and eco-friendly.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="commercial.html">Commercial</a></li>
+                        <li><a href="contact.html">Get a Quote</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="contact.html">Contact Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <span>(555) 123-4567<br><small>Mon-Fri, 9am-5pm</small></span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>hello@masterbin.com</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>123 Clean Street<br>Cityville, ST 12345</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Master Bin. All rights reserved.</p>
+                <p>Designed with <i class="fa-solid fa-heart" style="color: #ef4444;"></i> for cleanliness.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+    <script>
+        // Accordion Logic
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const item = button.parentElement;
+                const isActive = item.classList.contains('active');
+
+                // Close all
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+
+                // Open clicked if it wasn't open
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a Free Quote | Master Bin</title>
+    <meta name="description"
+        content="Contact Master Bin for a free estimate on exterior cleaning services. Fast response times and satisfaction guaranteed.">
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <a href="index.html" class="logo-link">
+                <img src="/images/logo.png" alt="Master Bin Logo" class="logo-img">
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="commercial.html">Commercial</a>
+                <a href="about.html">About</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+            <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+        </div>
+    </nav>
+
+    <!-- Contact Split Layout -->
+    <div class="contact-page-wrapper">
+
+        <!-- Left: Form Section -->
+        <div class="contact-form-section">
+            <div class="form-container-inner">
+                <h1>Get Your <span class="text-gradient">Free Quote</span></h1>
+                <p class="subtitle">Enter your details below and we'll send you a custom estimate within 24 hours.</p>
+
+                <form class="main-contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">First Name</label>
+                            <input id="first-name" name="firstName" type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name</label>
+                            <input id="last-name" name="lastName" type="text" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input id="email" name="email" type="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input id="phone" name="phone" type="tel" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Service Needed</label>
+                        <select id="service" name="service">
+                            <option value="Trash Bin Cleaning">Trash Bin Cleaning</option>
+                            <option value="Pressure Washing">Pressure Washing</option>
+                            <option value="Soft Wash (House/Roof)">Soft Wash (House/Roof)</option>
+                            <option value="Gutter Cleaning">Gutter Cleaning</option>
+                            <option value="Commercial Service">Commercial Service</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message / Address</label>
+                        <textarea id="message" name="message" rows="4"
+                            placeholder="Please include your address for an accurate quote."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block btn-large">Request Estimate</button>
+
+                    <p class="form-footer">
+                        <ion-icon name="lock-closed"></ion-icon> Your information is safe with us. No spam.
+                    </p>
+                </form>
+            </div>
+        </div>
+
+        <!-- Right: Image & Info Section -->
+        <div class="contact-image-section">
+            <div class="image-overlay-content">
+                <div class="contact-info-block">
+                    <h3>Contact Us Directly</h3>
+                    <p class="contact-link"><ion-icon name="call"></ion-icon> (555) 123-4567</p>
+                    <p class="contact-link"><ion-icon name="mail"></ion-icon> hello@masterbin.com</p>
+                    <p class="contact-link"><ion-icon name="location"></ion-icon> Serving the Greater Metro Area</p>
+                </div>
+
+                <div class="testimonial-mini">
+                    <div class="stars">★★★★★</div>
+                    <p>"The easiest quote process ever. They texted me a price in 10 minutes and cleaned my bins the
+                        next day!"</p>
+                    <cite>- Sarah Jenkins, Homeowner</cite>
+                </div>
+            </div>
+            <!-- Dynamic Image Background -->
+            <img src="/assets/happy_family.png" alt="Happy Family Backend" class="bg-image">
+        </div>
+
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

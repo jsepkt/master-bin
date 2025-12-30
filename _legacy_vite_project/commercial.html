@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial Exterior Cleaning | Master Bin</title>
+    <meta name="description"
+        content="Reliable exterior cleaning for HOAs, Property Managers, and Businesses. Bulk pricing and scheduled maintenance available.">
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <a href="index.html" class="logo-link">
+                <img src="/images/logo.png" alt="Master Bin Logo" class="logo-img">
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="commercial.html" class="active">Commercial</a>
+                <a href="about.html">About</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+            <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+        </div>
+    </nav>
+
+    <!-- Commercial Hero -->
+    <section class="commercial-hero">
+        <div class="commercial-hero-overlay"></div>
+        <div class="commercial-hero-content">
+            <span class="badge">For Business & HOAs</span>
+            <h1>First Impressions Matter.</h1>
+            <p>Reliable recurring exterior cleaning for property managers, homeowners associations, and commercial
+                fleets.</p>
+            <a href="#commercial-contact" class="btn btn-primary btn-large">Request Commercial Proposal</a>
+        </div>
+    </section>
+
+    <!-- Trust Factors -->
+    <section class="section trust-grid">
+        <div class="container">
+            <div class="trust-cards">
+                <div class="trust-card">
+                    <ion-icon name="shield-checkmark"></ion-icon>
+                    <h3>Fully Insured</h3>
+                    <p>We carry $2M in liability insurance for your peace of mind.</p>
+                </div>
+                <div class="trust-card">
+                    <ion-icon name="calendar"></ion-icon>
+                    <h3>Reliable Schedule</h3>
+                    <p>Set it and forget it. We show up on time, every time.</p>
+                </div>
+                <div class="trust-card">
+                    <ion-icon name="people"></ion-icon>
+                    <h3>Tenant Friendly</h3>
+                    <p>Our quiet, eco-friendly equipment respects your residents.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commercial Segments -->
+    <section class="section commercial-segments">
+        <div class="container">
+            <div class="segment-row">
+                <div class="segment-image">
+                    <img src="/images/hero.png" alt="Commercial Storefront">
+                </div>
+                <div class="segment-text">
+                    <h2>For Storefronts & Restaurants</h2>
+                    <p>A dirty sidewalk or dumpster pad drives customers away. We keep your entrance inviting and your
+                        sanitation areas compliant with health codes.</p>
+                    <ul class="segment-list">
+                        <li>Dumpster Pad Degreasing</li>
+                        <li>Sidewalk Gum Removal</li>
+                        <li>Building Facade Washing</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="segment-row reverse">
+                <div class="segment-image">
+                    <!-- Placeholder or reuse residential image for now -->
+                    <img src="/images/family.png" alt="HOA Community">
+                </div>
+                <div class="segment-text">
+                    <h2>For HOAs & Property Managers</h2>
+                    <p>Boost curb appeal across your entire community. We offer bulk pricing for trash bin cleaning and
+                        common area pressure washing.</p>
+                    <ul class="segment-list">
+                        <li>Community-Wide Bin Cleaning days</li>
+                        <li>Pool Deck & Clubhouse Cleaning</li>
+                        <li>Discounted Resident Rates</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commercial Contact Form (Simplified) -->
+    <section id="commercial-contact" class="section bg-light">
+        <div class="container commercial-form-container">
+            <div class="form-header">
+                <h2>Get a Commercial Proposal</h2>
+                <p>Tell us about your property needs.</p>
+            </div>
+            <form class="commercial-form">
+                <div class="form-group">
+                    <label for="business-name">Business / Organization Name</label>
+                    <input id="business-name" name="businessName" type="text" placeholder="e.g. Oak Creek HOA" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-name">Contact Name</label>
+                    <input id="contact-name" name="contactName" type="text" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label for="property-type">Property Type</label>
+                    <select id="property-type" name="propertyType">
+                        <option value="HOA / Community">HOA / Community</option>
+                        <option value="Restaurant / Retail">Restaurant / Retail</option>
+                        <option value="Office Building">Office Building</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="john@company.com" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Request Call Back</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Master Bin</h3>
+                    <p>Professional exterior cleaning services for residential and commercial properties. Licensed,
+                        insured, and eco-friendly.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="commercial.html">Commercial</a></li>
+                        <li><a href="contact.html">Get a Quote</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="contact.html">Contact Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <span>(555) 123-4567<br><small>Mon-Fri, 9am-5pm</small></span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>hello@masterbin.com</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>123 Clean Street<br>Cityville, ST 12345</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Master Bin. All rights reserved.</p>
+                <p>Designed with <i class="fa-solid fa-heart" style="color: #ef4444;"></i> for cleanliness.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
