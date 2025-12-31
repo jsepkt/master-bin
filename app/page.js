@@ -33,13 +33,7 @@ export default function HomePage() {
             transition={{ duration: 0.8 }}
             className="text-center max-w-4xl mx-auto"
           >
-            {/* OWNER UPSELL BADGE */}
-            <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full glass border border-yellow-400/30 bg-yellow-400/5 text-yellow-300 text-sm font-bold mb-8 animate-fade-in-up">
-              <span className="flex items-center justify-center w-6 h-6 rounded-full bg-yellow-400 text-slate-900 text-xs font-black">
-                %
-              </span>
-              Get 3 Neighbors to Sign Up = 20% OFF!
-            </div>
+
 
             <h1 className="text-5xl lg:text-7xl font-bold text-white tracking-tight leading-tight mb-8">
               Master Bin & <br />
