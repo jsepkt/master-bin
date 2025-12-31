@@ -89,7 +89,8 @@ export default function Navbar() {
                                 transition={{ delay: 0.5 }}
                                 href="/contact"
                                 onClick={() => setIsOpen(false)}
-                                className="mt-4 px-12 py-4 bg-brand-blue text-slate-900 font-bold rounded-full text-xl shadow-[0_0_20px_rgba(34,211,238,0.4)]"
+                                style={{ backgroundColor: '#22d3ee', color: '#020617' }}
+                                className="mt-4 px-12 py-4 font-bold rounded-full text-xl shadow-[0_0_20px_rgba(34,211,238,0.4)]"
                             >
                                 Get a Quote
                             </motion.a>
