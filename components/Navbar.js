@@ -55,32 +55,40 @@ export default function Navbar() {
             </div>
 
             {/* Mobile Menu */}
+            {/* Mobile Menu */}
             <AnimatePresence>
                 {isOpen && (
                     <motion.div
                         initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: 'auto' }}
+                        animate={{ opacity: 1, height: '100vh' }}
                         exit={{ opacity: 0, height: 0 }}
-                        className="md:hidden bg-slate-900 border-b border-white/10 overflow-hidden"
+                        className="md:hidden bg-slate-900/95 backdrop-blur-xl border-b border-white/10 fixed top-20 left-0 right-0 bottom-0 z-40 overflow-y-auto"
                     >
-                        <nav className="flex flex-col p-6 gap-4">
-                            {navLinks.map((link) => (
-                                <a
+                        <nav className="flex flex-col items-center justify-center min-h-[50vh] p-6 gap-8">
+                            {navLinks.map((link, i) => (
+                                <motion.a
+                                    initial={{ opacity: 0, y: 20 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ delay: i * 0.1 }}
                                     key={link.path}
                                     href={link.path}
                                     onClick={() => setIsOpen(false)}
-                                    className={`py-2 text-lg font-medium text-gray-300 ${isActive(link.path) ? 'text-brand-blue font-bold' : ''}`}
+                                    className={`text-2xl font-bold flex flex-col items-center gap-2 ${isActive(link.path) ? 'text-brand-blue' : 'text-gray-300'}`}
                                 >
                                     {link.name}
-                                </a>
+                                    {isActive(link.path) && <motion.div layoutId="mobile-underline" className="w-2 h-2 bg-brand-blue rounded-full" />}
+                                </motion.a>
                             ))}
-                            <a
+                            <motion.a
+                                initial={{ opacity: 0, scale: 0.9 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                transition={{ delay: 0.5 }}
                                 href="/contact"
                                 onClick={() => setIsOpen(false)}
-                                className="mt-2 w-full py-4 bg-brand-blue text-slate-900 font-bold rounded-xl text-center shadow-lg shadow-brand-blue/20"
+                                className="mt-4 px-12 py-4 bg-brand-blue text-slate-900 font-bold rounded-full text-xl shadow-[0_0_20px_rgba(34,211,238,0.4)]"
                             >
                                 Get a Quote
-                            </a>
+                            </motion.a>
                         </nav>
                     </motion.div>
                 )}
