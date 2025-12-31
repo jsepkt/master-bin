@@ -44,7 +44,11 @@ export default function Footer() {
 
                     {/* Contact Actions (Pill Buttons) */}
                     <div className="flex flex-col items-center md:items-end gap-4 mt-4 md:mt-0">
-                        <a href="tel:9404655505" className="group w-full md:w-auto flex items-center justify-center md:justify-end gap-3 px-6 py-3 bg-cyan-400 text-slate-900 font-bold rounded-full shadow-[0_0_15px_rgba(6,182,212,0.4)] hover:scale-105 transition-all">
+                        <a
+                            href="tel:9404655505"
+                            style={{ backgroundColor: '#22d3ee', color: '#020617' }}
+                            className="group w-full md:w-auto flex items-center justify-center md:justify-end gap-3 px-6 py-3 font-bold rounded-full shadow-[0_0_15px_rgba(6,182,212,0.4)] hover:scale-105 transition-all"
+                        >
                             <Phone className="w-5 h-5 fill-slate-900" />
                             (940) 465-5505
                         </a>

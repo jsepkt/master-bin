@@ -40,7 +40,11 @@ export default function Navbar() {
 
                     <div className="h-6 w-px bg-white/10 mx-2"></div>
 
-                    <a href="/contact" className="px-5 py-2.5 bg-brand-blue text-slate-900 rounded-lg font-bold shadow-lg shadow-brand-blue/20 hover:bg-cyan-400 transition-all flex items-center gap-2">
+                    <a
+                        href="/contact"
+                        style={{ backgroundColor: '#22d3ee', color: '#020617' }}
+                        className="px-5 py-2.5 rounded-lg font-bold shadow-lg shadow-cyan-400/20 hover:brightness-110 transition-all flex items-center gap-2"
+                    >
                         <Phone className="w-4 h-4" /> Get Quote
                     </a>
                 </nav>

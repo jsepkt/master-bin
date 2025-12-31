@@ -9,7 +9,8 @@ export default function MobileActionBar() {
                 {/* Call Button - Electric Cyan */}
                 <a
                     href="tel:9404655505"
-                    className="flex-1 flex items-center justify-center gap-2 bg-cyan-400 text-slate-900 font-black py-4 rounded-xl shadow-[0_0_20px_rgba(34,211,238,0.4)] active:scale-95 transition-transform"
+                    style={{ backgroundColor: '#22d3ee', color: '#020617' }}
+                    className="flex-1 flex items-center justify-center gap-2 font-black py-4 rounded-xl shadow-[0_0_20px_rgba(34,211,238,0.4)] active:scale-95 transition-transform"
                 >
                     <Phone className="w-5 h-5 fill-current" />
                     CALL
